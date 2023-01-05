@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-  origin: "*",
+  origin: "https://capstone-server-xp65.onrender.com",
 }))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
