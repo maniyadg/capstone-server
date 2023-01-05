@@ -24,7 +24,7 @@ router.post("/forget", async (req, res) => {
             expiresIn: "5m",
         });
         console.log(token)
-        const link = `http://localhost:3000/admin/user/reset-password/${user._id}/${token}`;
+        const link = `https://63b6a50e1cd7000f1fd798f2--famous-biscotti-024ad8.netlify.app/admin/user/reset-password/${user._id}/${token}`;
         console.log(link);
 
         let transporter = nodemailer.createTransport({
