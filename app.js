@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-  origin: "https://capstone-server-xp65.onrender.com",
+  origin: "https://63b69c6a67b207088691d3a4--famous-biscotti-024ad8.netlify.app/",
 }))
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
